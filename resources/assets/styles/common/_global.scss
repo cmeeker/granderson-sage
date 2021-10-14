@@ -1,0 +1,55 @@
+* {
+	font-family: 'Euclid Circular B', Arial, sans-serif;
+	font-weight: normal;
+	color: #EDDAB9;
+}
+
+a {
+	color: #ffffff;
+	transition: 0.2s;
+	text-decoration: none;
+
+	&:hover {
+		color: #EDDAB9;
+		text-decoration: none;
+	}
+}
+
+
+.fc-white {
+	color: #ffffff;
+}
+.wrap {
+	background: black;
+}
+
+.mainblock {
+    height: calc(100vh - 20rem);
+    overflow: scroll;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+
+    main {
+    	margin: auto;
+    }
+}
+
+.max100r {
+    max-width: 100rem;
+}
+
+.flc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h100vh {
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+}
+
+#wpadminbar {
+	display: none;
+}

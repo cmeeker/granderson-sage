@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "git add README.md",
-  "devUrl": "git init",
+  "publicPath": "/app/themes/sage",
+  "devUrl": "http://localhost/granderson",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../fonts/Euclid Circular B Regular'), url('../fonts/Euclid Circular B Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Italic'), url('../fonts/Euclid Circular B Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Light'), url('../fonts/Euclid Circular B Light.woff') format('woff');
+  font-style: normal;
+  font-weight: 100;
+  
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Light Italic'), url('../fonts/Euclid Circular B Light Italic.woff') format('woff');font-style: italic;
+  font-weight: 100;
+  
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Medium'), url('../fonts/Euclid Circular B Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Medium Italic'), url('../fonts/Euclid Circular B Medium Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B SemiBold'), url('../fonts/Euclid Circular B SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B SemiBold Italic'), url('../fonts/Euclid Circular B SemiBold Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: 600; 
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('../fonts/Euclid Circular B Bold'), url('../fonts/Euclid Circular B Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B Bold Italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('../fonts/Euclid Circular B Bold Italic'), url('../fonts/Euclid Circular B Bold Italic.woff') format('woff');
+}

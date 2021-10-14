@@ -1,11 +1,11 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
-  <body @php body_class() @endphp>
+  <body @php body_class() @endphp data-router-wrapper="data-router-wrapper">
     @php do_action('get_header') @endphp
     @include('partials.header')
-    <div class="wrap container" role="document">
-      <div class="content">
+    <div class="wrap flc h100vh" role="document">
+      <div class="content mainblock">
         <main class="main">
           @yield('content')
         </main>

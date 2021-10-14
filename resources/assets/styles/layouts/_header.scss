@@ -5,3 +5,279 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.navItems {
+  position: absolute;
+  width: 100%;
+  background: black;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+
+    li {
+      padding: 0 2vw;
+   
+      a {
+        padding: 0 0.75rem;
+        padding-bottom: 0.5rem;
+        color: #BD9B62;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s ease;
+
+        &:hover {
+          border-bottom: 1px solid #BD9B62;
+        }
+      }
+      
+      &.current-menu-item{
+       a {
+        border-bottom: 1px solid #BD9B62; 
+        }
+      }
+
+    }
+  }
+}
+
+.topNav {
+
+}
+
+.bottomNav {
+
+}
+
+.slideTop {
+    transform: translateY(calc(-50vh + 7rem));
+}
+
+.translide {
+  transition: transform 1s ease;
+}
+
+.z9 {
+    z-index: 9;
+}
+.l0 {
+    left: 0;
+}
+.t0 {
+    top: 0;
+}
+.pf {
+    position: fixed;
+}
+.flend {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.h50vh {
+    height: 50vh;
+    height: calc(var(--vh, 1vh)*50);
+}
+.w100vw {
+    width: 100vw;
+}
+.bdbg {
+    border-bottom: 1px solid #bd9b62;
+}
+
+.pf {
+  position: fixed;
+}
+
+.bdbg {
+    border-bottom: 1px solid #bd9b62;
+}
+
+.bdtg {
+    border-top: 1px solid #bd9b62;
+}
+
+.h50vh {
+    height: 50vh;
+    height: calc(var(--vh, 1vh)*50);
+}
+
+.t50vh {
+    top: 50vh;
+    top: calc(var(--vh, 1vh)*50);
+}
+
+.l0 {
+    left: 0;
+}
+
+.z9 {
+    z-index: 9;
+}
+
+.w100vw {
+    width: 100vw;
+}
+
+.flcas {
+    justify-content: center;
+}
+
+.flcas {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slideTop {
+  transform: translateY(calc(-50vh + 7rem));
+}
+
+.slideBottom {
+  transform: translateY(calc(50vh - 7rem));
+}
+
+.uline {
+    position: fixed;
+    left: 0;
+    top: calc(var(--vh, 1vh)*50);
+    height: 1px;
+    background: #bd9b62;
+    width: 100vw;
+    z-index: 99999;
+    transform: scaleX(0);
+    transition: transform 1.3s ease;
+}
+
+.transX {
+  transform: scaleX(1);
+}
+
+.topNav,
+.bottomNav {
+  background: black;
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.secNav, .navItems {
+  opacity: 0;
+  transition-delay: 1s;
+  transition: opacity 1s ease;
+  z-index: 99;
+}
+
+.innerNav {
+  padding-bottom: 2vh;
+
+  * {
+    line-height: 1.2;
+  }
+}
+
+.bottomNav {
+  .container {
+    padding-top: 2vh;
+  }
+}
+
+/*===== MOBILE STYLING =====*/
+
+@media screen and (max-width: 600px) {
+  .secNav {
+    display: none;
+  }
+  .w100-25 {
+    width: 100%;
+    padding-right: 0 !important;
+  }
+  .flcas .w25r {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .flcas .w3-5r {
+    margin-right: 0 !important;
+  }
+  .h7r {
+    height: 5.5rem;
+  }
+  .slideTop {
+    transform: translateY(calc(-50vh + 5.5rem));
+    transform: translateY(calc(5.5rem - (var(--vh, 1vh) * 50)));
+  }
+  .slideBottom {
+    transform: translateY(calc(50vh - 5.5rem));
+    transform: translateY(calc((var(--vh, 1vh) * 50) - 5.5rem));
+  }
+  .mainblock {
+    height: (calc((var(--vh, 1vh) * 100) - 15rem));
+    padding: 1.5rem;
+    overflow: auto;
+  }
+  .bottomNavLogo svg {
+    top: 1.5rem;
+    left: calc(50vw - 7.5rem);
+  }
+  .topNavLogo svg {
+    bottom: 1.5rem;
+    left: calc(50vw - 7.5rem);
+  }
+  .w20r {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .secNav {
+    display: none;
+  }
+  .w100-25 {
+    width: 100%;
+    padding-right: 0 !important;
+  }
+  .flcas .w25r {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .flcas .w3-5r {
+    margin-right: 0 !important;
+  }
+  .h7r {
+    height: 5.5rem;
+  }
+  .slideTop {
+    transform: translateY(calc(-50vh + 5.5rem));
+    transform: translateY(calc(5.5rem - (var(--vh, 1vh) * 50)));
+  }
+  .slideBottom {
+    transform: translateY(calc(50vh - 5.5rem));
+    transform: translateY(calc((var(--vh, 1vh) * 50) - 5.5rem));
+  }
+  .mainblock {
+    height: (calc((var(--vh, 1vh) * 100) - 15rem));
+    padding: 1.5rem;
+    overflow: auto;
+  }
+  .bottomNavLogo img {
+    top: 1.5rem;
+  }
+  .topNavLogo img {
+    bottom: 1.5rem;
+  }
+  .bottomNavLogo svg {
+    top: 1.5rem;
+    left: calc(50vw - 7.5rem);
+  }
+  .topNavLogo svg {
+    bottom: 1.5rem;
+    left: calc(50vw - 7.5rem);
+  }
+  .w20r {
+    width: 15rem;
+  }
+}

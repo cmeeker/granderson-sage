@@ -1,0 +1,14 @@
+.btn {
+	border: 1px solid #BD9B62;
+	border-radius: 100px;
+	padding: 0.5rem 1rem;
+	color: #EDDAB9;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+
+	&:hover {
+		background: #BD9B62;
+		color: black;
+
+	}
+}
