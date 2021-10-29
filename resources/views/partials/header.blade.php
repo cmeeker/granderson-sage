@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row align-items-center">
            <div class="col fc-white text-center text-md-left secNav" style="opacity: 0;">
-          BEVERLY<br>HILLS
+          BEVERLY HILLS
       </div>
 <div class="col text-center">
         <a class="navbar-brand" href="{{ home_url('/') }}">

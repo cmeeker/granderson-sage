@@ -1,3 +1,6 @@
+{{--
+  Template Name: Page - News
+--}}
 @extends('layouts.app')
 
 @section('content')
@@ -20,29 +23,30 @@
         'paged' => $paged, 
         'orderby' => 'DATE',
         'order'   => 'DESC'
-      ));
-    ?>
-
+      ));?>
     <?php if ( $query->have_posts() ) : ?>
-      <?php while ( $query->have_posts() ) : $query->the_post();
-      
-      //$att_img = get_the_post_thumbnail_url();
-      $att_img = esc_url((wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'thumb-medium')[0])); //get my custom image size from functions.php
-      $video = get_field('video_embed');
-      
-      $category = get_the_category();
-      $cat_image = get_field('cat_image', $category[0] );
-      
-      ?>
+      <div class="row masonry m-0">
+      <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <?php if ( has_post_thumbnail() ) : ?>
+            <div class="article-image">
+              <a href="<?php the_permalink(); ?>">
+                <div class="card-img">
+                  <?php the_post_thumbnail('blog-preview', array('class' => 'img-fluid')); ?>
+                </div>
+              </a>
+            </div>
+            <?php endif; ?>
 
-        @include('partials.content-blog-feature')
+            <div class="article-text">
+                <h2 class="entry-title font-family-sans-serif h6 text-uppercase"><a href="{{ get_permalink() }}"><?php the_title(); ?></a></h2>
+                <p>—</p>
+                <p class="updated mb-md-4" datetime="{{ get_post_time('c', true) }}">{{ get_the_date() }}</p>
+            </div>
+
       <?php endwhile; ?>
-
-
-
-
+      </div>
       <div class="col-12">
-        <div class="pagination">
+        <div class="pagination mt-4">
 
           <?php 
           echo paginate_links( array(
@@ -66,6 +70,11 @@
       </div>
 
       <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+
+      <div class="alert alert-warning">
+        {{ __('Sorry, no results were found.', 'sage') }}
+      </div>
     <?php endif; ?>
 
 

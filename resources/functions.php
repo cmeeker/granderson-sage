@@ -90,3 +90,10 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+//Custom Image Sizes
+add_image_size( 'blog-preview', 350, 350 ); // Blog Preview
+add_image_size( 'thumb-medium', 790, 388, true ); //Blog Index Articles
+add_image_size( 'thumb-small', 511, 734, true ); //Attorney Index
+add_image_size( 'header-large', 1980, 750, true ); //Headers
+add_image_size( 'immigration-card', 517, 688, true ); //Immigration Card

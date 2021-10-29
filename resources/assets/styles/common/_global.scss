@@ -15,7 +15,6 @@ a {
 	}
 }
 
-
 .fc-white {
 	color: #ffffff;
 }
@@ -29,9 +28,11 @@ a {
     display: flex;
     vertical-align: middle;
     align-items: center;
+    width: 100%;
 
     main {
     	margin: auto;
+    	width: 100%;
     }
 }
 
@@ -50,6 +51,237 @@ a {
     height: calc(var(--vh, 1vh)*100);
 }
 
-#wpadminbar {
-	display: none;
+.profile-pic {
+	border: 1px solid $brand-tan-dark;
+}
+
+// #wpadminbar {
+// 	display: none;
+// }
+
+// WP Admin Text editor 
+#tinymce * {
+	color: #2c3338;
+}
+
+//Social Icons
+.icn-fb {
+	transition: 0.2s;
+	display: inline-block;
+	width: 7.3px;
+	height: 14px;
+	//margin-top: 6px;
+  	background-color: $brand-tan-dark;
+	-webkit-mask: url('../images/icn-fb.svg') no-repeat center;
+	mask: url('../images/icn-fb.svg') no-repeat center;
+
+ 	&:hover {
+ 		background-color: $brand-tan;
+	}
+}
+
+.icn-ig {
+	transition: 0.2s;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	//margin-top: 6px;
+  	background-color: $brand-tan-dark;
+	-webkit-mask: url('../images/icn-ig.svg') no-repeat center;
+	mask: url('../images/icn-ig.svg') no-repeat center;
+
+ 	&:hover {
+ 		background-color: $brand-tan;
+	}
+}
+
+.icn-twtr {
+	transition: 0.2s;
+	display: inline-block;
+	width: 14px;
+	height: 11.36px;
+	margin-top: 2px;
+  	background-color: $brand-tan-dark;
+	-webkit-mask: url('../images/icn-twtr.svg') no-repeat center;
+	mask: url('../images/icn-twtr.svg') no-repeat center;
+
+ 	&:hover {
+ 		background-color: $brand-tan;
+	}
+}
+
+.icn-linkedin {
+	transition: 0.2s;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: 2px;
+  	background-color: $brand-tan-dark;
+	-webkit-mask: url('../images/icn-linkedin.svg') no-repeat center;
+	mask: url('../images/icn-linkedin.svg') no-repeat center;
+
+ 	&:hover {
+ 		background-color: $brand-tan;
+	}
+}
+
+//Single Attorney 
+.single-attorney {
+	.container	{
+		max-width: 1080px;
+	}
+	
+	.profile-pic {
+	 	@include media-breakpoint-up(xl) {
+		 	width: 100%;
+	 	}
+	}
+}
+
+//Attorney Page 
+.template-attorneys {
+	.container {
+		max-width: 840px;
+	}
+
+	.profile-pic {
+		max-width: 200px;
+	}
+
+	.attorney-list {
+		.attorney {
+			margin-bottom: 2rem;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 4rem;
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-bottom: 5rem;
+			}
+		}
+	}
+}
+
+//News
+.pagination * {
+    display: none;
+}
+
+.blog-single-inner {
+	.article-image {
+		max-width: 100%;
+	}
+}
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    width: 100%;
+    padding-top: 1rem;
+
+    .prev,
+    .next {
+	    display: flex;
+	    // font-size: 1.275rem;	   
+	    text-decoration: none;
+	    transition: .2s;
+		color: $brand-tan;
+		text-transform: uppercase;
+		transition: 0.2s ease;	
+
+
+		&:hover {
+			color: $brand-tan-dark;
+		}
+
+    }
+
+    .prev {
+	    margin-right: auto;
+    }
+
+    .next {
+	    margin-left: auto;
+    }
+}
+
+.paginate-single {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    width: 100%;
+    padding-top: 1rem;
+
+    .prev,
+    .next {
+	    display: flex;
+	    // font-size: 1.275rem;	   
+	    text-decoration: none;
+	    transition: .2s;
+		border: 1px solid $brand-tan-dark;
+		border-radius: 100px;
+		padding: 0.5rem 1rem;
+		color: $brand-tan;
+		text-transform: uppercase;
+		transition: 0.2s ease;	
+
+		&:hover {
+			background: $brand-tan-dark;
+			color: black;
+			
+		}
+
+    }
+
+    .prev {
+	    margin-right: auto;
+    }
+
+    .next {
+	    margin-left: auto;
+    }
+}
+
+//News Index
+
+.masonry {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    grid-auto-rows: minmax(200px, 1fr);
+    grid-auto-flow: dense;
+
+    @include media-breakpoint-up(lg) {
+    	display: grid;
+    }
+
+    @include media-breakpoint-up(xl) {
+    	grid-gap: 50px;
+    }
+
+    img {
+    	width: 100%;
+    }
+
+    
+	div {
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+		@include media-breakpoint-up(lg) {
+			&:nth-child(1) {
+				grid-column-end: span 2;
+			    grid-row-end: span 2;
+		    }
+
+		    &:nth-child(2) {
+		    	grid-column-end: span 2;
+			   	grid-row-end: span 1;
+		    }
+		}
+	}
 }

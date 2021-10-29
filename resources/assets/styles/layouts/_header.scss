@@ -6,6 +6,10 @@
   @extend .nav-link;
 }
 
+.navbar-brand {
+  margin-right: 0;
+}
+
 .navItems {
   position: absolute;
   width: 100%;

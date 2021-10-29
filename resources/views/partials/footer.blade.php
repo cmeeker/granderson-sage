@@ -13,7 +13,7 @@
         @endif
       </div>
       <div class="col fc-white text-md-right secNav" style="opacity: 0;">
-        HI@GDRFIRM.COM
+        <a href="mailto:HI@GDRFIRM.COM">HI@GDRFIRM.COM</a>
       </div>
 
 
