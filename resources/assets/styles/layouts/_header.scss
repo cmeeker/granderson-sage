@@ -234,9 +234,10 @@
     transform: translateY(calc((var(--vh, 1vh) * 50) - 5rem));
   }
   .mainblock {
-    height: (calc((var(--vh, 1vh) * 100) - 10rem));
+    height: (calc((var(--vh, 1vh) * 100) - 15rem));
     padding: 1.5rem;
     overflow: auto;
+    margin-top: 5rem;
   }
   .bottomNavLogo svg {
     top: 1.5rem;
