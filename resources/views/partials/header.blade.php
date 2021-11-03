@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row align-items-center">
            <div class="col fc-white text-center text-md-left secNav" style="opacity: 0;">
-          BEVERLY HILLS
+          {{ get_theme_mod ('header_top_left')}}
       </div>
 <div class="col text-center">
         <a class="navbar-brand" href="{{ home_url('/') }}">
@@ -17,7 +17,7 @@
       </div>
 
       <div class="col fc-white text-center text-md-right secNav" style="opacity: 0;">
-        NEW YORK CITY
+        {{ get_theme_mod ('header_top_right')}}
       </div>
 
       </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
 
       <?php if( have_rows('content') ): ?>

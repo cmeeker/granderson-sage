@@ -15,8 +15,7 @@
 
 			$attorneys_list = get_field('attorneys_list');
 			if( $attorneys_list ): ?>
-
-
+			
 			<?php foreach( $attorneys_list as $attorney ): 
 
 			        $permalink = get_permalink( $attorney->ID );

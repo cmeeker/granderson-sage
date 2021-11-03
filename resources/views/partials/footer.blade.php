@@ -2,7 +2,7 @@
   <div class="container">
       <div class="row align-items-center">
       <div class="col fc-white text-md-left secNav" style="opacity: 0;">
-        GDR EST. 2019
+        {{ get_theme_mod ('footer_text')}}
       </div>
 
       <div class="col text-center">
@@ -13,7 +13,9 @@
         @endif
       </div>
       <div class="col fc-white text-md-right secNav" style="opacity: 0;">
-        <a href="mailto:HI@GDRFIRM.COM">HI@GDRFIRM.COM</a>
+        <a href="mailto:{{ get_theme_mod ('footer_email')}}">{{ get_theme_mod ('footer_email')}}</a>
+
+
       </div>
 
 

@@ -63,6 +63,10 @@
 
 .translide {
   transition: transform 1s ease;
+
+  .no-animation & {
+    transition: 0s;
+  }
 }
 
 .z9 {
@@ -137,11 +141,11 @@
 }
 
 .slideTop {
-  transform: translateY(calc(-50vh + 7rem));
+  transform: translateY(calc(-50vh + 5rem));
 }
 
 .slideBottom {
-  transform: translateY(calc(50vh - 7rem));
+  transform: translateY(calc(50vh - 5rem));
 }
 
 .uline {
@@ -174,6 +178,17 @@
   transition-delay: 1s;
   transition: opacity 1s ease;
   z-index: 99;
+
+  .no-animation & {
+    transition-delay: 0s;
+    transition: 0s;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navItems {
+    // border-top: 1px solid $brand-tan-dark;
+  }
 }
 
 .innerNav {
@@ -211,15 +226,15 @@
     height: 5.5rem;
   }
   .slideTop {
-    transform: translateY(calc(-50vh + 5.5rem));
+    transform: translateY(calc(-50vh + 5rem));
     transform: translateY(calc(5.5rem - (var(--vh, 1vh) * 50)));
   }
   .slideBottom {
-    transform: translateY(calc(50vh - 5.5rem));
-    transform: translateY(calc((var(--vh, 1vh) * 50) - 5.5rem));
+    transform: translateY(calc(50vh - 5rem));
+    transform: translateY(calc((var(--vh, 1vh) * 50) - 5rem));
   }
   .mainblock {
-    height: (calc((var(--vh, 1vh) * 100) - 15rem));
+    height: (calc((var(--vh, 1vh) * 100) - 10rem));
     padding: 1.5rem;
     overflow: auto;
   }
@@ -255,12 +270,12 @@
     height: 5.5rem;
   }
   .slideTop {
-    transform: translateY(calc(-50vh + 5.5rem));
-    transform: translateY(calc(5.5rem - (var(--vh, 1vh) * 50)));
+    transform: translateY(calc(-50vh + 5rem));
+    transform: translateY(calc(5rem - (var(--vh, 1vh) * 50)));
   }
   .slideBottom {
-    transform: translateY(calc(50vh - 5.5rem));
-    transform: translateY(calc((var(--vh, 1vh) * 50) - 5.5rem));
+    transform: translateY(calc(50vh - 5rem));
+    transform: translateY(calc((var(--vh, 1vh) * 50) - 5rem));
   }
   .mainblock {
     height: (calc((var(--vh, 1vh) * 100) - 15rem));

@@ -4,7 +4,7 @@
     <div class="entry-content">
       <div class="row">
         <div class="col-md-4">
-          <?php the_post_thumbnail( 'full' );   ?>
+          <?php the_post_thumbnail('full', array('class' => 'img-fluid mb-3'));   ?>
         </div>
         <div class="col-md-8">
           <p class="fc-white text-uppercase text-left">{!! App::title() !!}</p>

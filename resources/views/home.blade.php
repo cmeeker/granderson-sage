@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div class="container section section-blog-index pt-0">
+  <div class="container section section-blog-index py-5">
     <div class="row">
       <div class="col">
         <p class="fc-white text-uppercase text-left">NEWS</p>
